@@ -18,10 +18,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 });
 
-/**
- * Parse data into key-value pairs
- * @param {object} data Object containing historical data of BPI
- */
 function parseData(data) {
   var arr = [];
   for (var i in data.bpi) {
@@ -33,10 +29,6 @@ function parseData(data) {
   return arr;
 }
 
-/**
- * Creates a chart using D3
- * @param {object} data Object containing historical data of BPI
- */
 function drawChart(data) {
   var svgWidth = 600,
     svgHeight = 400;
